@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import APIURL from '../../helpers/environment';
 
 class PokemonCreate extends Component {
     constructor(props) {
@@ -22,7 +23,7 @@ class PokemonCreate extends Component {
 
     handleSubmit = (event) => {
         // event.preventDefault();
-        fetch(`http://localhost:3000/team/create/`, {
+        fetch(`${APIURL}/team/create/`, {
             method: 'POST',
             body: JSON.stringify({ team: this.state }),
             headers: new Headers({

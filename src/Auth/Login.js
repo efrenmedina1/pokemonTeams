@@ -2,6 +2,7 @@ import React, { Component} from "react";
 import {Form, FormGroup, Label, Input, } from "reactstrap";
 import pokeball from '../../../pokemonreact/src/assets/imgs/pokeball.png'
 import './Auth.css'
+import APIURL from '../helpers/environment';
 
 class Login extends Component {
     constructor(props) {
@@ -19,7 +20,7 @@ class Login extends Component {
     }
 
     handleSubmit = (event) => {
-        fetch("http://localhost:3000/account/login", {
+        fetch(`${APIURL}/account/login`, {
             method: 'POST',
             body: JSON.stringify({user:this.state}),
             headers: new Headers({

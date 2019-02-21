@@ -5,6 +5,7 @@ import Display from './pokemondisplay'
 
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import APIURL from '../../helpers/environment';
 
 
 class PokemonTeam extends React.Component {
@@ -24,7 +25,7 @@ class PokemonTeam extends React.Component {
 
   
   fetchPokemons = () => {
-    fetch("http://localhost:3000/team",{
+    fetch(`${APIURL}/team`,{
       method: 'GET',
       headers: new Headers({
         'Content-Type': 'application/json',
@@ -42,7 +43,7 @@ class PokemonTeam extends React.Component {
 
   pokemonDelete = (event) => {
     console.log(event.target.id);
-    fetch(`http://localhost:3000/team/${event.target.id}`, {
+    fetch(`${APIURL}/team/${event.target.id}`, {
       method: 'DELETE',
       body: JSON.stringify({ team: { id: event.target.id } }),
       headers: new Headers({
@@ -55,7 +56,7 @@ class PokemonTeam extends React.Component {
 
   pokemonUpdate1 = (event) => {
     let buttonid = event.target.id; 
-    fetch(`http://localhost:3000/team/${buttonid}`, {
+    fetch(`${APIURL}/team/${buttonid}`, {
       method: 'PUT',
       body: JSON.stringify({  
         team: {
@@ -78,7 +79,7 @@ class PokemonTeam extends React.Component {
   
   pokemonUpdate2 = (event) => {
     let buttonid = event.target.id; 
-    fetch(`http://localhost:3000/team/${buttonid}`, {
+    fetch(`${APIURL}/team/${buttonid}`, {
       method: 'PUT',
       body: JSON.stringify({  
         team: {
@@ -101,7 +102,7 @@ class PokemonTeam extends React.Component {
 
   pokemonUpdate3 = (event) => {
     let buttonid = event.target.id; 
-    fetch(`http://localhost:3000/team/${buttonid}`, {
+    fetch(`${APIURL}/team/${buttonid}`, {
       method: 'PUT',
       body: JSON.stringify({  
         team: {
@@ -124,7 +125,7 @@ class PokemonTeam extends React.Component {
 
   pokemonUpdate4 = (event) => {
     let buttonid = event.target.id; 
-    fetch(`http://localhost:3000/team/${buttonid}`, {
+    fetch(`${APIURL}/team/${buttonid}`, {
       method: 'PUT',
       body: JSON.stringify({  
         team: {
@@ -147,7 +148,7 @@ class PokemonTeam extends React.Component {
 
   pokemonUpdate5 = (event) => {
     let buttonid = event.target.id; 
-    fetch(`http://localhost:3000/team/${buttonid}`, {
+    fetch(`${APIURL}/team/${buttonid}`, {
       method: 'PUT',
       body: JSON.stringify({  
         team: {
@@ -170,7 +171,7 @@ class PokemonTeam extends React.Component {
 
   pokemonUpdate6 = (event) => {
     let buttonid = event.target.id; 
-    fetch(`http://localhost:3000/team/${buttonid}`, {
+    fetch(`${APIURL}/team/${buttonid}`, {
       method: 'PUT',
       body: JSON.stringify({  
         team: {
