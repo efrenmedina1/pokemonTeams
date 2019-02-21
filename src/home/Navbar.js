@@ -11,7 +11,7 @@ import {
 } from 'reactstrap';
 import './Navbar.css'
 
-import eevee from '../../../pokemonreact/src/assets/imgs/eevee.ico'
+import eevee from '../assets/imgs/eevee.ico'
 
 class SiteBar extends Component {
     constructor(props) {
