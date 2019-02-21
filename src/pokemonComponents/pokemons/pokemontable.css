@@ -1,0 +1,13 @@
+.text{
+    font-size: 100%;
+}
+
+.pokesprite{
+    height: 50%;
+    width: 70%;
+}
+
+.pokeslot{
+    height: 300px;
+}
+

@@ -1,0 +1,25 @@
+.text{
+    font-size: 100%;
+}
+
+.pokesprite{
+    height: 50%;
+    width: 70%;
+}
+
+.pokeslot{
+    height: 300px;
+    background-color: red;
+    border: solid white 1rem;
+    overflow: auto;
+    
+}
+
+.black{
+    padding: .3rem;
+    background-color: red;
+}
+
+.deletecenter{
+    text-align: center;
+}

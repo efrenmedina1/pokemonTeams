@@ -1,0 +1,47 @@
+.row1{
+    height: 150px;
+}
+
+.row2{
+    height: 150px;
+}
+
+.sprite{
+    background-color: white;
+    margin: 6px;
+    margin-top: 20px;
+    height: 80%;
+    width: 80%;
+    color: black;
+}
+
+.pokedexsprite{
+    left: 6px;
+    height: 100%;
+    width: 100%;
+}
+
+.pokedexrows{
+    padding: 1rem;
+}
+
+.pokedex{
+    background-color: blue;
+    color: white;
+    height: 725px;
+    border: solid blue 0.5rem;
+    border-radius: 0.5rem;
+    
+}
+
+.poketeam{
+    background-color: white;
+    color: white;
+}
+
+.pokesheader{
+    background-color: red;
+    padding-left: 3rem;
+    
+}
+

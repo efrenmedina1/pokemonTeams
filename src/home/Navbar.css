@@ -1,0 +1,24 @@
+.nav{
+    height: 100px;
+    background-color: red;
+    color: white;
+}
+
+.navitem1{
+    background-color: white;
+    padding: 1px;
+    border-radius: 15px;
+}
+
+.eevee{
+    height: 120px;
+}
+
+.navitem2{
+    color: white;
+    border-radius: 3px;
+}
+
+.button{
+    border-radius: 3px;
+}
