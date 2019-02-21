@@ -3,7 +3,7 @@ import Signup from './Signup';
 import Login from './Login';
 import { Container, Row, Col } from 'reactstrap';
 import './Auth.css'
-import oak from '../../../pokemonreact/src/assets/imgs/oak.png'
+import oak from '../assets/imgs/oak.png'
     
 const Auth = (props) => {
     return (

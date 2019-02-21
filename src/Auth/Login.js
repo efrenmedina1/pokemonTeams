@@ -1,6 +1,6 @@
 import React, { Component} from "react";
 import {Form, FormGroup, Label, Input, } from "reactstrap";
-import pokeball from '../../../pokemonreact/src/assets/imgs/pokeball.png'
+import pokeball from '../assets/imgs/pokeball.png'
 import './Auth.css'
 import APIURL from '../helpers/environment';
 
