@@ -7,7 +7,7 @@ switch (window.location.hostname) {
         APIURL = 'http://localhost:3000';
         break;
     // this is the deployed react application
-    case 'efrens-pokemon-client.herokuapp.com/':
+    case 'efrens-pokemon-client.herokuapp.com':
         // this is the full url of your deployed API
         APIURL = 'https://efren-pokemon-app.herokuapp.com'
 }
