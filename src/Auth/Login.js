@@ -47,7 +47,7 @@ render() {
                         <Label for="password">Password</Label>
                         <Input id="li_password" type="password" name="password" placeholder="enter password" onChange={this.handleChange} required />
                     </FormGroup>
-                    <button type="image" className='button' src='pokeball'> <img alt="Logout" className = 'pokeball'
+                    <button type="image" className='button' src='pokeball'> <img className = 'pokeball'
                     src={pokeball}/> <p><b>Login  </b></p>      </button> 
                 </Form>
             </div>

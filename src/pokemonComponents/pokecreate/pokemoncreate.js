@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import APIURL from '../../helpers/environment';
 import './pokemoncreate.css'
+import redTeam from '../../assets/imgs/redteam.gif'
 
 class PokemonCreate extends Component {
     constructor(props) {
@@ -50,7 +51,7 @@ class PokemonCreate extends Component {
     }
 
     render() {
-        return (
+        return ( 
             <div>
                 <h2>Create new team</h2>
                 <form onSubmit={this.handleSubmit} >
@@ -84,7 +85,9 @@ class PokemonCreate extends Component {
                         <input id="pokemon6" type="text" name="pokemon6" value={this.state.pokemon6} placeholder="enter pokemon id" onChange={this.handleChange} />
                     </form> */}
                     
-                    <button className='buttoncreate' type="submit" color="primary">  </button>
+                    <button className='buttoncreate' type="submit" color="primary"> 
+                    <img className = 'redTeam' src={redTeam}/> 
+                    </button> 
                 </form>
             </div>
         )

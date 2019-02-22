@@ -77,7 +77,7 @@ export class Pokedex extends Component {
                   <br></br>
                     <p>Name: {(this.state.results.name)}</p>
                     <br></br>
-                    <p>id:  {(this.state.results.id)}</p>
+                    <p>No.  {(this.state.results.id)}</p>
                   </Col>
                 </Row>
 
