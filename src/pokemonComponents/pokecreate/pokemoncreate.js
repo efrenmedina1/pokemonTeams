@@ -27,6 +27,10 @@ class PokemonCreate extends Component {
 
     handleSubmit = (event) => {
         // event.preventDefault();
+        
+        
+
+
         fetch(`${APIURL}/team/create/`, {
             method: 'POST',
             body: JSON.stringify({ team: this.state }),
