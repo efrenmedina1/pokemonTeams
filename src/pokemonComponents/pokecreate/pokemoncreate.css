@@ -1,0 +1,19 @@
+.buttoncreate{
+    background-image: url('../../assets/imgs/eevee.png');
+    background-color: rgb(255, 5, 5);
+    border-radius: 20px;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 16rem;
+    width:  16rem;
+} 
+
+.buttonText{
+    background-color: rgba(54, 0, 251, 0.578);
+
+}
+
+.teamdiv{
+    text-align: center;
+}

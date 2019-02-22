@@ -1,24 +1,27 @@
 import React, { Component } from 'react';
 import APIURL from '../../helpers/environment';
+import './pokemoncreate.css'
 
 class PokemonCreate extends Component {
     constructor(props) {
         super(props)
         this.state = {
             id:'',
-            pokemon1: '',
-            pokemon2: '',
-            pokemon3: '',
-            pokemon4: '',
-            pokemon5: '',
-            pokemon6: ''
+            pokemon1: '0',
+            pokemon2: '0',
+            pokemon3: '0',
+            pokemon4: '0',
+            pokemon5: '0',
+            pokemon6: '0'
         };
     }
 
+    ///remove comments to return input fields 
+
     handleChange = (event) => {
-        this.setState({
-            [event.target.name]: event.target.value
-        })
+        // this.setState({
+        //     [event.target.name]: event.target.value
+        // })
     }
 
     handleSubmit = (event) => {
@@ -50,9 +53,8 @@ class PokemonCreate extends Component {
         return (
             <div>
                 <h2>Create new team</h2>
-                <hr />
                 <form onSubmit={this.handleSubmit} >
-                    <form>
+                    {/* <form>
                         <label for="pokemon1">Pokemon 1 |</label> 
                         <input id="pokemon1" type="text" name="pokemon1" value={this.state.pokemon1} placeholder="enter pokemon id" onChange={this.handleChange} />
                     </form>
@@ -80,9 +82,9 @@ class PokemonCreate extends Component {
                     <form>
                         <label for="pokemon6">Pokemon 6 |</label>
                         <input id="pokemon6" type="text" name="pokemon6" value={this.state.pokemon6} placeholder="enter pokemon id" onChange={this.handleChange} />
-                    </form>
+                    </form> */}
                     
-                    <button className='button' type="submit" color="primary"> <b>Submit</b> </button>
+                    <button className='buttoncreate' type="submit" color="primary">  </button>
                 </form>
             </div>
         )
