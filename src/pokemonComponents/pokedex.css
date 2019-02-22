@@ -28,7 +28,7 @@
 .pokedex{
     background-color: blue;
     color: white;
-    height: 725px;
+    height: 750px;
     border: solid blue 0.5rem;
     border-radius: 0.5rem;
     
@@ -43,5 +43,9 @@
     background-color: red;
     padding-left: 3rem;
     
+}
+
+.pokedexcreate{
+    border-top: solid white 0.5rem;
 }
 

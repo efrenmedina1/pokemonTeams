@@ -3,10 +3,8 @@ import {
     Collapse,
     Navbar,
     NavbarToggler,
-    NavbarBrand,
     Nav,
-    NavItem,
-    Button
+    NavItem
 
 } from 'reactstrap';
 import './Navbar.css'

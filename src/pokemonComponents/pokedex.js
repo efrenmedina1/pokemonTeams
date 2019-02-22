@@ -96,10 +96,12 @@ export class Pokedex extends Component {
                       required
                     /> 
                   </form>
+                  
                 </Row>
-
+                <br></br>
                 <Row className='pokedexcreate'>
                     <PokeCreate token={this.props.token} />
+                    
                 </Row>
 
         </Col>  

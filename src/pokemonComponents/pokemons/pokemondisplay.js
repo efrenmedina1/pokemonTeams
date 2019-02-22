@@ -1,22 +1,17 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import './pokemondisplay.css'
-import pokeball from '../../assets/imgs/pokeball.png'
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
+
 
 
 const PokeTable = (props) => {
 // console.log(props.pokemonteam[0].id)
     return (
         <div>
-            
-            
-            {
-                        props.pokemonteam.map((poketeam, id) => {
-                            return (
-                                
-                                    // <p>{props.pokemonteam[id].pokemon1}</p>
+          
+         
+            {props.pokemonteam.map((poketeam, id) => {
+         return (
     
       <div key={id}>
         <Container >
@@ -78,10 +73,11 @@ const PokeTable = (props) => {
         <Col className='deletecenter' md="12">  <button id={props.pokemonteam[id].id} onClick={props.delete} className='buttonblue' >Delete</button> </Col>
         </Row>
       </Container>
-      </div>              
-                            )
-                        })
-                    }
+      </div> 
+                 
+     )
+    })
+  } 
         </div>
     );
 }
