@@ -29,10 +29,10 @@ export class Pokedex extends Component {
   };
 
   handleKeyUp = (e) => {
-    let Skik = e.target.value
+    // let Skik = e.target.value
 
-    // let GLOW = e.target.value
-    // let Skik = GLOW.toLowerCase();
+    let GLOW = e.target.value
+    let Skik = GLOW.toLowerCase();
     
     
      

@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import './pokemondisplay.css'
 import deleteSave from '../../assets/imgs/delete.png'
-import pokeball from '../../assets/imgs/pokemonspin.gif'
+import pokeball from '../../assets/imgs/pokemonspin.gif' 
 
 
 
