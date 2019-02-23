@@ -41,7 +41,7 @@ class PokemonTeam extends React.Component {
   }
 
   pokemonDelete = (event) => {
-    console.log(event.target.id);
+    window.location.reload();
     fetch(`${APIURL}/team/${event.target.id}`, {
       method: 'DELETE',
       body: JSON.stringify({ team: { id: event.target.id } }),
