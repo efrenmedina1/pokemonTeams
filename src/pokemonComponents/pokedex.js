@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Container, Row, Col } from 'reactstrap';
 import PokeCreate from './pokecreate/pokemoncreate'
 import PokeTeam from './pokemons/pokemontable';
+import APIURL from '../helpers/environment';
 import './pokedex.css'
 
 
@@ -15,11 +16,35 @@ export class Pokedex extends Component {
           29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, [43], [44], [45], [46], [47], [48], [49], [50], [51], [1], [2], [3]]
       },
 
+      poketeam: [{}],
+
     };
 
 
      
     
+  }
+
+  componentWillMount() {
+    this.fetchPokemons()
+  }
+
+  
+  fetchPokemons = () => {
+    fetch(`${APIURL}/team`,{
+      method: 'GET',
+      headers: new Headers({
+        'Content-Type': 'application/json',
+        'Authorization': this.props.token
+      })
+    })
+
+   .then(response =>{  response.json().then(data => {
+      const poketeam = data;
+      this.setState({poketeam}); //console.log(this.state.poketeam); 
+    });
+  })
+  
   }
 
   
@@ -34,8 +59,6 @@ export class Pokedex extends Component {
     let GLOW = e.target.value
     let Skik = GLOW.toLowerCase();
     
-    
-     
 
     fetch(
       `https://pokeapi.co/api/v2/pokemon-species/${Skik}`
@@ -103,7 +126,16 @@ export class Pokedex extends Component {
                 </Row>
                 <br></br>
                 <Row className='pokedexcreate'>
-                    <PokeCreate token={this.props.token} />
+
+                {this.state.poketeam.length > 0 ? (
+          <h3>Search for pokemon using the Pokedex. Press the capture button to grab the pokemon from Pokedex and add it to your team!</h3>
+        ) : (
+          <PokeCreate token={this.props.token} />
+        )}
+
+
+
+                    
                     
                 </Row>
 

@@ -7,6 +7,7 @@ class PokemonCreate extends Component {
     constructor(props) {
         super(props)
         this.state = {
+           Create:{
             id:'',
             pokemon1: '0',
             pokemon2: '0',
@@ -14,8 +15,32 @@ class PokemonCreate extends Component {
             pokemon4: '0',
             pokemon5: '0',
             pokemon6: '0'
+           },
+           poketeam: [{}],
         };
     }
+
+    componentWillMount() {
+        this.fetchPokemons()
+      }
+    
+      
+      fetchPokemons = () => {
+        fetch(`${APIURL}/team`,{
+          method: 'GET',
+          headers: new Headers({
+            'Content-Type': 'application/json',
+            'Authorization': this.props.token
+          })
+        })
+    
+       .then(response =>{  response.json().then(data => {
+          const poketeam = data;
+          this.setState({poketeam}); console.log(this.state.poketeam); 
+        });
+      })
+      
+      }
 
     ///remove comments to return input fields 
 
@@ -27,29 +52,27 @@ class PokemonCreate extends Component {
 
     handleSubmit = (event) => {
         // event.preventDefault();
-        
-        
 
 
         fetch(`${APIURL}/team/create/`, {
             method: 'POST',
-            body: JSON.stringify({ team: this.state }),
+            body: JSON.stringify({ team: this.state.Create }),
             headers: new Headers({
                 'Content-Type': 'application/json',
                 'Authorization': this.props.token
             })
         })
         .then((res) => res.json())
-        .then((pokeData) => {
+        .then((res) => {
             this.setState({
-                id: '',
-                pokemon1: '',
-                pokemon2: '',
-                pokemon3: '',
-                pokemon4: '',
-                pokemon5: '',
-                pokemon6: ''
-                
+               create:{ id: '0',
+                pokemon1: '0',
+                pokemon2: '0',
+                pokemon3: '0',
+                pokemon4: '0',
+                pokemon5: '0',
+                pokemon6: '0'
+            },
             })
         })
     }
