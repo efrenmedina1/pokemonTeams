@@ -32,8 +32,8 @@ const PokeTable = (props) => {
           
           <img className = 'pokesprite' alt = "Whos that Pokemon?"
             src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${props.pokemonteam[id].pokemon2}.png`}/>
-            <button id={props.pokemonteam[id].id} onClick={props.update2} className='buttonblue' > <img id={props.pokemonteam[id].id} onClick={props.update1} className = 'pokeball'
-                    src={pokeball}/> <b id={props.pokemonteam[id].id} onClick={props.update1}>Capture</b> </button>
+            <button id={props.pokemonteam[id].id} onClick={props.update2} className='buttonblue' > <img id={props.pokemonteam[id].id} onClick={props.update2} className = 'pokeball'
+                    src={pokeball}/> <b id={props.pokemonteam[id].id} onClick={props.update2}>Capture</b> </button>
             </Col>
 
 
@@ -42,8 +42,8 @@ const PokeTable = (props) => {
           
           <img className = 'pokesprite' alt = "Whos that Pokemon?"
             src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${props.pokemonteam[id].pokemon3}.png`}/>
-          <button id={props.pokemonteam[id].id} onClick={props.update3} className='buttonblue' ><img id={props.pokemonteam[id].id} onClick={props.update1} className = 'pokeball'
-                    src={pokeball}/> <b id={props.pokemonteam[id].id} onClick={props.update1}>Capture</b> </button>
+          <button id={props.pokemonteam[id].id} onClick={props.update3} className='buttonblue' ><img id={props.pokemonteam[id].id} onClick={props.update3} className = 'pokeball'
+                    src={pokeball}/> <b id={props.pokemonteam[id].id} onClick={props.update3}>Capture</b> </button>
           </Col>
  
         </Row>
@@ -54,8 +54,8 @@ const PokeTable = (props) => {
           
           <img className = 'pokesprite' alt = "Whos that Pokemon?"
             src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${props.pokemonteam[id].pokemon4}.png`}/>
-            <button id={props.pokemonteam[id].id} onClick={props.update4} className='buttonblue' ><img id={props.pokemonteam[id].id} onClick={props.update1} className = 'pokeball'
-                    src={pokeball}/> <b id={props.pokemonteam[id].id} onClick={props.update1}>Capture</b> </button>
+            <button id={props.pokemonteam[id].id} onClick={props.update4} className='buttonblue' ><img id={props.pokemonteam[id].id} onClick={props.update4} className = 'pokeball'
+                    src={pokeball}/> <b id={props.pokemonteam[id].id} onClick={props.update4}>Capture</b> </button>
           </Col>
 
           <Col className = 'pokeslot' md="4">
@@ -63,8 +63,8 @@ const PokeTable = (props) => {
        
           <img className = 'pokesprite' alt = "Whos that Pokemon?"
             src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${props.pokemonteam[id].pokemon5}.png`}/>
-            <button id={props.pokemonteam[id].id} onClick={props.update5} className='buttonblue' ><img id={props.pokemonteam[id].id} onClick={props.update1} className = 'pokeball'
-                    src={pokeball}/> <b id={props.pokemonteam[id].id} onClick={props.update1}>Capture</b> </button>
+            <button id={props.pokemonteam[id].id} onClick={props.update5} className='buttonblue' ><img id={props.pokemonteam[id].id} onClick={props.update5} className = 'pokeball'
+                    src={pokeball}/> <b id={props.pokemonteam[id].id} onClick={props.update5}>Capture</b> </button>
           </Col>
 
           <Col className = 'pokeslot' md="4">
@@ -72,8 +72,8 @@ const PokeTable = (props) => {
           
           <img className = 'pokesprite' alt = "Whos that Pokemon?"
             src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${props.pokemonteam[id].pokemon6}.png`}/>
-            <button id={props.pokemonteam[id].id} onClick={props.update6} className='buttonblue' ><img id={props.pokemonteam[id].id} onClick={props.update1} className = 'pokeball'
-                    src={pokeball}/> <b id={props.pokemonteam[id].id} onClick={props.update1}>Capture</b> </button>
+            <button id={props.pokemonteam[id].id} onClick={props.update6} className='buttonblue' ><img id={props.pokemonteam[id].id} onClick={props.update6} className = 'pokeball'
+                    src={pokeball}/> <b id={props.pokemonteam[id].id} onClick={props.update6}>Capture</b> </button>
           </Col>
 
         </Row>
