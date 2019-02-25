@@ -31,7 +31,7 @@ export default class Pokedex extends Component {
 
   
   fetchPokemons = () => {
-    fetch(`${APIURL}/team`,{
+    fetch(`${APIURL}/team3`,{
       method: 'GET',
       headers: new Headers({
         'Content-Type': 'application/json',
@@ -143,7 +143,7 @@ export default class Pokedex extends Component {
                     <Container>
                         <Row className='pokesheader'>
                         
-                        <h3> Pokemon Team One</h3>
+                        <h3> Pokemons Team Three</h3>
                         <hr />
                         </Row>
                         

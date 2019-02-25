@@ -2,5 +2,19 @@
     padding-top: 25px;
 }
 
+.toggleHeader{
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
 
 
+.buttonteam{
+    background-color: blue;
+    border-radius: 20px;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}

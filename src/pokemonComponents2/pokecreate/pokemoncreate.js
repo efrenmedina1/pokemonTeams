@@ -26,7 +26,7 @@ class PokemonCreate extends Component {
     
       
       fetchPokemons = () => {
-        fetch(`${APIURL}/team`,{
+        fetch(`${APIURL}/team2`,{
           method: 'GET',
           headers: new Headers({
             'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ class PokemonCreate extends Component {
       
       }
 
-    ///remove comments to return input fields 
+    //remove comments to return input fields 
 
     handleChange = (event) => {
         // this.setState({
@@ -54,9 +54,9 @@ class PokemonCreate extends Component {
         event.preventDefault();
 
 
-        fetch(`${APIURL}/team/create/`, {
+        fetch(`${APIURL}/team2/create/`, {
             method: 'POST',
-            body: JSON.stringify({ team: this.state.Create }),
+            body: JSON.stringify({ team2: this.state.Create }),
             headers: new Headers({
                 'Content-Type': 'application/json',
                 'Authorization': this.props.token
@@ -75,7 +75,7 @@ class PokemonCreate extends Component {
             },
             })
         })
-        // .then((res) =>window.location.reload())
+       
         .then((res) => this.props.fetchPokemons())
         console.log(this.props)
     }

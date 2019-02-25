@@ -26,7 +26,7 @@ class PokemonCreate extends Component {
     
       
       fetchPokemons = () => {
-        fetch(`${APIURL}/team`,{
+        fetch(`${APIURL}/team3`,{
           method: 'GET',
           headers: new Headers({
             'Content-Type': 'application/json',
@@ -54,9 +54,9 @@ class PokemonCreate extends Component {
         event.preventDefault();
 
 
-        fetch(`${APIURL}/team/create/`, {
+        fetch(`${APIURL}/team3/create/`, {
             method: 'POST',
-            body: JSON.stringify({ team: this.state.Create }),
+            body: JSON.stringify({ team3: this.state.Create }),
             headers: new Headers({
                 'Content-Type': 'application/json',
                 'Authorization': this.props.token

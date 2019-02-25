@@ -11,7 +11,7 @@
 }
 
 .eevee{
-    height: 120px;
+    height: 8rem;
 }
 
 .navitem2{
@@ -21,4 +21,8 @@
 
 .button{
     border-radius: 3px;
+}
+
+.escaperope{
+    height: 2rem;
 }

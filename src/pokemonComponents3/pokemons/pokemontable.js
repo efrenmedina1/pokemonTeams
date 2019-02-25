@@ -26,7 +26,7 @@ class PokemonTeam extends React.Component {
 
   
   fetchPokemons = () => {
-    fetch(`${APIURL}/team`,{
+    fetch(`${APIURL}/team3`,{
       method: 'GET',
       headers: new Headers({
         'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ class PokemonTeam extends React.Component {
 
   pokemonDelete = (event) => {
     
-    fetch(`${APIURL}/team/${event.target.id}`, {
+    fetch(`${APIURL}/team3/${event.target.id}`, {
       method: 'DELETE',
       body: JSON.stringify({ team: { id: event.target.id } }),
       headers: new Headers({
@@ -59,10 +59,10 @@ class PokemonTeam extends React.Component {
 
   pokemonUpdate1 = (event) => {
     let buttonid = event.target.id; 
-    fetch(`${APIURL}/team/${buttonid}`, {
+    fetch(`${APIURL}/team3/${buttonid}`, {
       method: 'PUT',
       body: JSON.stringify({  
-        team: {
+        team3: {
           "pokemon1": (this.props.pokedexID),
           "pokemon2": (this.state.poketeam.pokemon2),
           "pokemon3": (this.state.poketeam.pokemon3),
@@ -82,10 +82,10 @@ class PokemonTeam extends React.Component {
   
   pokemonUpdate2 = (event) => {
     let buttonid = event.target.id; 
-    fetch(`${APIURL}/team/${buttonid}`, {
+    fetch(`${APIURL}/team3/${buttonid}`, {
       method: 'PUT',
       body: JSON.stringify({  
-        team: {
+        team3: {
           "pokemon1": (this.state.poketeam.pokemon1),
           "pokemon2": (this.props.pokedexID),
           "pokemon3": (this.state.poketeam.pokemon3),
@@ -105,10 +105,10 @@ class PokemonTeam extends React.Component {
 
   pokemonUpdate3 = (event) => {
     let buttonid = event.target.id; 
-    fetch(`${APIURL}/team/${buttonid}`, {
+    fetch(`${APIURL}/team3/${buttonid}`, {
       method: 'PUT',
       body: JSON.stringify({  
-        team: {
+        team3: {
           "pokemon1": (this.state.poketeam.pokemon1),
           "pokemon2": (this.state.poketeam.pokemon2),
           "pokemon3": (this.props.pokedexID),
@@ -128,10 +128,10 @@ class PokemonTeam extends React.Component {
 
   pokemonUpdate4 = (event) => {
     let buttonid = event.target.id; 
-    fetch(`${APIURL}/team/${buttonid}`, {
+    fetch(`${APIURL}/team3/${buttonid}`, {
       method: 'PUT',
       body: JSON.stringify({  
-        team: {
+        team3: {
           "pokemon1": (this.state.poketeam.pokemon1),
           "pokemon2": (this.state.poketeam.pokemon2),
           "pokemon3": (this.state.poketeam.pokemon3),
@@ -151,10 +151,10 @@ class PokemonTeam extends React.Component {
 
   pokemonUpdate5 = (event) => {
     let buttonid = event.target.id; 
-    fetch(`${APIURL}/team/${buttonid}`, {
+    fetch(`${APIURL}/team3/${buttonid}`, {
       method: 'PUT',
       body: JSON.stringify({  
-        team: {
+        team3: {
           "pokemon1": (this.state.poketeam.pokemon1),
           "pokemon2": (this.state.poketeam.pokemon2),
           "pokemon3": (this.state.poketeam.pokemon3),
@@ -174,10 +174,10 @@ class PokemonTeam extends React.Component {
 
   pokemonUpdate6 = (event) => {
     let buttonid = event.target.id; 
-    fetch(`${APIURL}/team/${buttonid}`, {
+    fetch(`${APIURL}/team3/${buttonid}`, {
       method: 'PUT',
       body: JSON.stringify({  
-        team: {
+        team3: {
           "pokemon1": (this.state.poketeam.pokemon1),
           "pokemon2": (this.state.poketeam.pokemon2),
           "pokemon3": (this.state.poketeam.pokemon3),
