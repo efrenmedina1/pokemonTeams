@@ -47,7 +47,7 @@ class Signup extends Component {
                     </FormGroup>
                     <FormGroup>
                         <Label for="password">Password</Label>
-                        <Input id="su_password" type="password" name="password" placeholder="enter password" required onChange={this.handleChange} />
+                        <Input id="su_password" type="password" name="password" placeholder="enter password" minlength="6" required onChange={this.handleChange} />
                     </FormGroup>
                     <button type="image" className='button' src='pokeball'> <img alt="Logout" className = 'pokeball'
                     src={pokeball}/> <p><b>Signup  </b></p>      </button> 
