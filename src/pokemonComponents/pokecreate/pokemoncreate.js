@@ -51,7 +51,7 @@ class PokemonCreate extends Component {
     }
 
     handleSubmit = (event) => {
-        // event.preventDefault();
+        event.preventDefault();
 
 
         fetch(`${APIURL}/team/create/`, {
@@ -75,6 +75,7 @@ class PokemonCreate extends Component {
             },
             })
         })
+        .then((res) =>window.location.reload())
     }
 
     render() {
