@@ -127,10 +127,9 @@ export default class Pokedex extends Component {
                 <br></br>
                 <Row className='pokedexcreate'>
 
-                {this.state.poketeam.length > 0 ? (
+                
           <h3>Search for pokemon using the Pokedex. Press the capture button to grab the pokemon from Pokedex and add it to your team!</h3>
-        ) : (
-          <PokeCreate token={this.props.token} />
+        
         )}
 
                     
