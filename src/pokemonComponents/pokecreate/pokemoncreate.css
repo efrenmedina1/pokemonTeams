@@ -15,6 +15,7 @@
 
 .divteam{
     text-align: center;
+    
 }
 
 img.redTeam{
@@ -28,5 +29,7 @@ img.redTeam{
     color: white;
     text-align: center;
     background-color: red;
+    border-radius: 6rem;
+    
 }
 

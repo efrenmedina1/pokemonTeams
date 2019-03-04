@@ -130,7 +130,7 @@ export default class Pokedex extends Component {
                 
           <h3>Search for pokemon using the Pokedex. Press the capture button to grab the pokemon from Pokedex and add it to your team!</h3>
         
-        )}
+        
 
                     
                     
