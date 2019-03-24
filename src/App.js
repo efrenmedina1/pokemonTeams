@@ -20,14 +20,14 @@ class App extends Component {
   }
 
 componentWillMount() {
-    const token = localStorage.getItem('token');
+    const token = sessionStorage.getItem('token');
     if (token && !this.state.sessionToken) {   
       this.setState({ sessionToken: token });
     }
 }
 
 setSessionState = (token) => {
-    localStorage.setItem('token', token); 
+    sessionStorage.setItem('token', token); 
     this.setState({ sessionToken: token });
 }
 
@@ -35,11 +35,12 @@ logout = () => {
   this.setState({ 
     sessionToken: '', 
   });
+  sessionStorage.clear();
   localStorage.clear();
 }
 
 protectedViews = () => {
-  if (this.state.sessionToken === localStorage.getItem('token')) {
+  if (this.state.sessionToken === sessionStorage.getItem('token')) {
     return (
       <Switch>
         <Route path='/' exact>
