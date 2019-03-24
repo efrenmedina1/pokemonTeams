@@ -28,9 +28,20 @@ class Login extends Component {
                 })
         }).then(
             (response) => response.json()
-        ).then((data) => {
-            this.props.setToken(data.sessionToken)
-        }) 
+        )
+        .then(json =>  { 
+            if(json.error == "failed to authenticate") {
+            window.alert( "User does not exisit. Please sign up" );
+            console.log(json);
+          } else if(json.error == "you failed a") {
+            window.alert( "Incorrect Password. Contact admin to reset password" );
+            console.log(json)
+          } else {
+            console.log(json)
+            this.props.setToken(json.sessionToken)
+            window.alert("Logged in");
+          }
+          } )
         event.preventDefault()
     }
 

@@ -28,8 +28,14 @@ class Signup extends Component {
             })
         }).then(
             (response) => response.json()
+            .catch((err) => console.log(err))
         ).then((data) => {
-            this.props.setToken(data.sessionToken)
+            if(data = "undefined"){
+    window.alert( "User already exist. Please choose another username to signup" );
+    console.log(data);
+            }else{
+            console.log(data);
+            this.props.setToken(data.sessionToken)}
         }) 
         event.preventDefault()
     }
