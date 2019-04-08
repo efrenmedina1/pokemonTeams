@@ -56,7 +56,7 @@ export default class Splash extends Component {
     
         return (
                 <div className="Splash" >
-                <Container className="toggleHeader" >
+                <Container className="toggleHeader" id="notmoblie" >
                 <Row> 
                 <Col md="4" >
                     <button onClick={this.pokemonTeamOne} className='buttonteam' > <b onClick={this.pokemonTeamOne} >  Pokemon Team One </b> </button>
@@ -70,7 +70,21 @@ export default class Splash extends Component {
                 </Row>
                 </Container>
                 
-                {this.pokemonViews()}    
+                {this.pokemonViews()}   
+
+                                <Container className="toggleHeader" id="moblie" >
+                <Row> 
+                <Col md="4" >
+                    <button onClick={this.pokemonTeamOne} className='buttonteam' > <b onClick={this.pokemonTeamOne} >  Pokemon Team One </b> </button>
+                </Col>
+                <Col md="4" >
+                    <button onClick={this.pokemonTeamTwo} className='buttonteam' > <b onClick={this.pokemonTeamTwo} > Pokemon Team Two </b> </button>
+                </Col>
+                <Col md="4" >
+                    <button onClick={this.pokemonTeamThree} className='buttonteam' > <b onClick={this.pokemonTeamThree} >  Pokemon Team Three </b> </button>
+                </Col>
+                </Row>
+                </Container> 
                 </div>
             );
         }

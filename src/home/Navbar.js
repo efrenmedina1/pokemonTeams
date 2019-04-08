@@ -31,18 +31,18 @@ class SiteBar extends Component {
             <div>
                 <Navbar color="faded" className="nav"  light expand="md">
                 
-                    <h1 className="navitem2" href="/">
                     <img alt="Eevee" className = 'eevee' src={eevee}/>
+                    <h1 className="navitem2" href="/">
                         Pokemon Teams
                     </h1>
-                    <NavbarToggler onClick={this.toggle} />
-                    <Collapse isOpen={this.state.isOpen} navbar>
+                   
+                
                         <Nav className="ml-auto" navbar>
                             <NavItem className="navitem1">
                                 <button className="button" onClick={() => this.props.clickLogout()}> <img alt="escaperope" className = 'escaperope' src={escaperope}/> <b onClick={() => this.props.clickLogout()} >Logout</b></button>
                             </NavItem>
                         </Nav>
-                    </Collapse>
+                  
                 </Navbar>
             </div>
         );

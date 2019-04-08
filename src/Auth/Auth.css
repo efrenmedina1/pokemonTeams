@@ -1,36 +1,54 @@
-.middle{
+
+
+@media only screen and (max-width: 9999px) {
+    .middle{
     
-    background-image: url('../assets/imgs/pokemonbackground.png');
-    background-size: 100%;
-    vertical-align: bottom;
-    text-align: center;
-    height: 500px;
-    padding-top: 340px;
-    border-radius: 20px;
+        background-image: url('../assets/imgs/pokemonbackground.png');
+        background-size: 100%;
+        vertical-align: bottom;
+        text-align: center;
+        height: 500px;
+        padding-top: 340px;
+        border-radius: 20px;
+        
+    }
     
-}
+    .oak{
+        text-align: center;
+        vertical-align: bottom;
+    }
+    
+    .pokeball{
+        height: 50px;
+    }
+    
+    .button{
+        background-color: rgb(255, 5, 5);
+        border-radius: 20px;
+        color: white;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .buttonblue{
+        background-color: blue;
+        border-radius: 20px;
+        color: white;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
-.oak{
-    text-align: center;
-    vertical-align: bottom;
-}
+  }
 
-.pokeball{
-    height: 50px;
-}
-
-.button{
-    background-color: rgb(255, 5, 5);
-    border-radius: 20px;
-    color: white;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.buttonblue{
-    background-color: blue;
-    border-radius: 20px;
-    color: white;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+  @media only screen and (max-width: 450px) {
+    .middle{
+    
+        background-image: url('../assets/imgs/pokemonbackground.png');
+        background-size: 100%;
+        vertical-align: bottom;
+        text-align: center;
+        height: 200px;
+        padding-top: 20px;
+        
+    }
+  }

@@ -26,3 +26,14 @@
 .escaperope{
     height: 2rem;
 }
+
+@media only screen and (max-width: 450px) {
+    .navitem2{
+        display: none;
+    }
+    .nav{
+        height: 120px;
+        background-color: red;
+        color: white;
+    }
+}
